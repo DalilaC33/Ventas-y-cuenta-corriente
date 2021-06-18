@@ -1,0 +1,39 @@
+﻿@model IEnumerable<M_ventas_y_cc.Models.DEPOSITO>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.direccion)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.direccion)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.DEPOSITOId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.DEPOSITOId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.DEPOSITOId })
+        </td>
+    </tr>
+}
+
+</table>
