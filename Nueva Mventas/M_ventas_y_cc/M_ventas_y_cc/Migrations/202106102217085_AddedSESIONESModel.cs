@@ -23,7 +23,7 @@ namespace M_ventas_y_cc.Migrations
                 .ForeignKey("dbo.ENCARGADOes", t => t.ENCARGADOId_ENCARGADOId)
                 .Index(t => t.ENCARGADOId_ENCARGADOId);
             
-            DropTable("dbo.SESIONs");
+           //DropTable("dbo.SESIONs");
         }
         
         public override void Down()
@@ -42,7 +42,7 @@ namespace M_ventas_y_cc.Migrations
             
             DropForeignKey("dbo.SESIONES", "ENCARGADOId_ENCARGADOId", "dbo.ENCARGADOes");
             DropIndex("dbo.SESIONES", new[] { "ENCARGADOId_ENCARGADOId" });
-            DropTable("dbo.SESIONES");
+           // DropTable("dbo.SESIONES");
             CreateIndex("dbo.SESIONs", "ENCARGADOId_ENCARGADOId");
             AddForeignKey("dbo.SESIONs", "ENCARGADOId_ENCARGADOId", "dbo.ENCARGADOes", "ENCARGADOId");
         }
