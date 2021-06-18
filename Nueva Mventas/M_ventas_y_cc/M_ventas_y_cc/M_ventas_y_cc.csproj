@@ -297,13 +297,18 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\APICLIENTEController.cs" />
     <Compile Include="Controllers\APIDEPOSITOesController.cs" />
+    <Compile Include="Controllers\APIDETALLES_FACTURAController.cs" />
+    <Compile Include="Controllers\APIDETALLE_CREDITOController.cs" />
     <Compile Include="Controllers\APIENCARGADOesController.cs" />
     <Compile Include="Controllers\APIPRODUCTOesController.cs" />
     <Compile Include="Controllers\APISESIONESController.cs" />
     <Compile Include="Controllers\APISESIONsController.cs" />
     <Compile Include="Controllers\APISTOCKController.cs" />
+    <Compile Include="Controllers\APIVENTAsController.cs" />
     <Compile Include="Controllers\CLIENTEsController.cs" />
     <Compile Include="Controllers\DEPOSITOesController.cs" />
+    <Compile Include="Controllers\DETALLES_FACTURAController.cs" />
+    <Compile Include="Controllers\DETALLE_CREDITOController.cs" />
     <Compile Include="Controllers\ENCARGADOesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -311,6 +316,7 @@
     <Compile Include="Controllers\SESIONESController.cs" />
     <Compile Include="Controllers\SESIONsController.cs" />
     <Compile Include="Controllers\STOCKsController.cs" />
+    <Compile Include="Controllers\VENTAsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -370,14 +376,28 @@
     <Compile Include="Migrations\202106102310103_borreFila.Designer.cs">
       <DependentUpon>202106102310103_borreFila.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106182012390_AdedDFModels.cs" />
+    <Compile Include="Migrations\202106182012390_AdedDFModels.Designer.cs">
+      <DependentUpon>202106182012390_AdedDFModels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106182034355_AdedDFACTURAModels.cs" />
+    <Compile Include="Migrations\202106182034355_AdedDFACTURAModels.Designer.cs">
+      <DependentUpon>202106182034355_AdedDFACTURAModels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106182041575_AdedDVENTAModels.cs" />
+    <Compile Include="Migrations\202106182041575_AdedDVENTAModels.Designer.cs">
+      <DependentUpon>202106182041575_AdedDVENTAModels.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\BANCO.cs" />
     <Compile Include="Models\CLIENTE.cs" />
     <Compile Include="Models\DEPOSITO.cs" />
+    <Compile Include="Models\DETALLES_FACTURA.cs" />
     <Compile Include="Models\DETALLE_CREDITO.cs" />
     <Compile Include="Models\ENCARGADO.cs" />
+    <Compile Include="Models\FACTURA.cs" />
     <Compile Include="Models\FORMAS_DE_PAGO.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -386,6 +406,7 @@
     <Compile Include="Models\SESIONES.cs" />
     <Compile Include="Models\STOCK.cs" />
     <Compile Include="Models\TARJETA.cs" />
+    <Compile Include="Models\VENTA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -480,6 +501,21 @@
     <Content Include="Views\PRODUCTOes\Details.cshtml" />
     <Content Include="Views\PRODUCTOes\Edit.cshtml" />
     <Content Include="Views\PRODUCTOes\Index.cshtml" />
+    <Content Include="Views\DETALLE_CREDITO\Create.cshtml" />
+    <Content Include="Views\DETALLE_CREDITO\Delete.cshtml" />
+    <Content Include="Views\DETALLE_CREDITO\Details.cshtml" />
+    <Content Include="Views\DETALLE_CREDITO\Edit.cshtml" />
+    <Content Include="Views\DETALLE_CREDITO\Index.cshtml" />
+    <Content Include="Views\DETALLES_FACTURA\Create.cshtml" />
+    <Content Include="Views\DETALLES_FACTURA\Delete.cshtml" />
+    <Content Include="Views\DETALLES_FACTURA\Details.cshtml" />
+    <Content Include="Views\DETALLES_FACTURA\Edit.cshtml" />
+    <Content Include="Views\DETALLES_FACTURA\Index.cshtml" />
+    <Content Include="Views\VENTAs\Create.cshtml" />
+    <Content Include="Views\VENTAs\Delete.cshtml" />
+    <Content Include="Views\VENTAs\Details.cshtml" />
+    <Content Include="Views\VENTAs\Edit.cshtml" />
+    <Content Include="Views\VENTAs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -539,6 +575,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202106102310103_borreFila.resx">
       <DependentUpon>202106102310103_borreFila.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106182012390_AdedDFModels.resx">
+      <DependentUpon>202106182012390_AdedDFModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106182034355_AdedDFACTURAModels.resx">
+      <DependentUpon>202106182034355_AdedDFACTURAModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106182041575_AdedDVENTAModels.resx">
+      <DependentUpon>202106182041575_AdedDVENTAModels.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -37,8 +37,9 @@ namespace M_ventas_y_cc.Models
         public DbSet<DEPOSITO> DEPOSITO { get; set; }
         public DbSet<STOCK> STOCK { get; set; }
         public DbSet<SESION> SESION { get; set; }
-
-
+        public DbSet<DETALLES_FACTURA> DETALLES_FACTURA { get; set; }
+        public DbSet<FACTURA> FACTURA { get; set; }
+        public DbSet<VENTA> VENTA { get; set; }
     }
 
 }

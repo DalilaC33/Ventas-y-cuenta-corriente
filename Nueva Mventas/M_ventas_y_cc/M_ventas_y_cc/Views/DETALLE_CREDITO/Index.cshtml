@@ -1,0 +1,45 @@
+﻿@model IEnumerable<M_ventas_y_cc.Models.DETALLE_CREDITO>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MONTO_CUOTA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NRO_CUOTA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PAGADO)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MONTO_CUOTA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NRO_CUOTA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PAGADO)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.DETALLE_CREDITOId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.DETALLE_CREDITOId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.DETALLE_CREDITOId })
+        </td>
+    </tr>
+}
+
+</table>

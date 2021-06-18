@@ -1,0 +1,42 @@
+﻿@model M_ventas_y_cc.Models.DETALLE_CREDITO
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DETALLE_CREDITO</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MONTO_CUOTA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MONTO_CUOTA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NRO_CUOTA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NRO_CUOTA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PAGADO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PAGADO)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DETALLE_CREDITOId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
