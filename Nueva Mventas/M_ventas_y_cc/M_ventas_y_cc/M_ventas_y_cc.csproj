@@ -394,6 +394,10 @@
     <Compile Include="Migrations\202106182041575_AdedDVENTAModels.Designer.cs">
       <DependentUpon>202106182041575_AdedDVENTAModels.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106220215511_ChangeCLIENTEyENCARGADOModels.cs" />
+    <Compile Include="Migrations\202106220215511_ChangeCLIENTEyENCARGADOModels.Designer.cs">
+      <DependentUpon>202106220215511_ChangeCLIENTEyENCARGADOModels.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -590,6 +594,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202106182041575_AdedDVENTAModels.resx">
       <DependentUpon>202106182041575_AdedDVENTAModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106220215511_ChangeCLIENTEyENCARGADOModels.resx">
+      <DependentUpon>202106220215511_ChangeCLIENTEyENCARGADOModels.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
