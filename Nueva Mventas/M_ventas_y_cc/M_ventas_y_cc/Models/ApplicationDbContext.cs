@@ -40,6 +40,19 @@ namespace M_ventas_y_cc.Models
         public DbSet<DETALLES_FACTURA> DETALLES_FACTURA { get; set; }
         public DbSet<FACTURA> FACTURA { get; set; }
         public DbSet<VENTA> VENTA { get; set; }
+        public DbSet<VENTAS_DETALLES> VENTAS_DETALLES { get; set; }
+
+        public DbSet<DETALLES_DE_PAGO> DETALLES_DE_PAGO { get; set; }
+
+        public DbSet<PAGOS> PAGOS { get; set; }
+
+        public DbSet<DETALLES_FACT_PAGO> DETALLES_FACT_PAGO { get; set; }
+        public DbSet<NOTAS_DE_CREDITO> NOTAS_DE_CREDITO { get; set; }
+        public DbSet<CUENTAS> CUENTAS { get; set; }
+        public DbSet<ASIENTO> ASIENTO { get; set; }
+        public DbSet<ASIENTOS_DETALLES> ASIENTOS_DETALLES { get; set; }
+
+
     }
 
 }

@@ -1,0 +1,42 @@
+﻿@model M_ventas_y_cc.Models.VENTAS_DETALLES
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>VENTAS_DETALLES</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.cantidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cantidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.precio_unitario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.precio_unitario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.subtotal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.subtotal)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.VENTAS_DETALLESId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

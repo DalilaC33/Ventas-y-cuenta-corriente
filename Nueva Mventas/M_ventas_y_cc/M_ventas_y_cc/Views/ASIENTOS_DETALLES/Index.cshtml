@@ -1,0 +1,45 @@
+﻿@model IEnumerable<M_ventas_y_cc.Models.ASIENTOS_DETALLES>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DEBE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HABER)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.estado)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DEBE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HABER)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.estado)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ASIENTOS_DETALLESId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ASIENTOS_DETALLESId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ASIENTOS_DETALLESId })
+        </td>
+    </tr>
+}
+
+</table>

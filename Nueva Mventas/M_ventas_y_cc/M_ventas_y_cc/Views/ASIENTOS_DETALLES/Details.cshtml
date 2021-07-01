@@ -1,0 +1,42 @@
+﻿@model M_ventas_y_cc.Models.ASIENTOS_DETALLES
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ASIENTOS_DETALLES</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DEBE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DEBE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HABER)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HABER)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ASIENTOS_DETALLESId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

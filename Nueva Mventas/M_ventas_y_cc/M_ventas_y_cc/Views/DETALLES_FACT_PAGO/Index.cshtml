@@ -1,0 +1,27 @@
+﻿@model IEnumerable<M_ventas_y_cc.Models.DETALLES_FACT_PAGO>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.DETALLES_FACT_PAGOId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.DETALLES_FACT_PAGOId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.DETALLES_FACT_PAGOId })
+        </td>
+    </tr>
+}
+
+</table>

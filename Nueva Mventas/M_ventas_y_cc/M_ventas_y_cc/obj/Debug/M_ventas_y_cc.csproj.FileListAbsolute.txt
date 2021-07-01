@@ -891,3 +891,12 @@ C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\
 C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.csproj.CopyComplete
 C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.dll
 C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.pdb
+C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.ChangeCLIENTEyENCARGADOModels.resources
+C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.addVDModel.resources
+C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.addDPModel.resources
+C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.AddedPAGOSModel.resources
+C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.AddedDFPModel.resources
+C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.addedNCModel.resources
+C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.AddedCUENTASModel.resources
+C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.AddedASIENTOModel.resources
+C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.AddedASIENTOSDModel.resources

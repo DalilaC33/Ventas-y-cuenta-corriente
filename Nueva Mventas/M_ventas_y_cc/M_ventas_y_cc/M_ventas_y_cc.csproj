@@ -301,28 +301,44 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\APIASIENTOController.cs" />
+    <Compile Include="Controllers\APIASIENTOS_DETALLESController.cs" />
     <Compile Include="Controllers\APICLIENTEController.cs" />
+    <Compile Include="Controllers\APICUENTASController.cs" />
     <Compile Include="Controllers\APIDEPOSITOesController.cs" />
+    <Compile Include="Controllers\APIDETALLES_DE_PAGOController.cs" />
     <Compile Include="Controllers\APIDETALLES_FACTURAController.cs" />
+    <Compile Include="Controllers\APIDETALLES_FACT_PAGOController.cs" />
     <Compile Include="Controllers\APIDETALLE_CREDITOController.cs" />
     <Compile Include="Controllers\APIENCARGADOesController.cs" />
+    <Compile Include="Controllers\APINOTAS_DE_CREDITOController.cs" />
+    <Compile Include="Controllers\APIPAGOSController.cs" />
     <Compile Include="Controllers\APIPRODUCTOesController.cs" />
     <Compile Include="Controllers\APISESIONESController.cs" />
     <Compile Include="Controllers\APISESIONsController.cs" />
     <Compile Include="Controllers\APISTOCKController.cs" />
     <Compile Include="Controllers\APIVENTAsController.cs" />
+    <Compile Include="Controllers\APIVENTAS_DETALLESController.cs" />
+    <Compile Include="Controllers\ASIENTOSController.cs" />
+    <Compile Include="Controllers\ASIENTOS_DETALLESController.cs" />
     <Compile Include="Controllers\CLIENTEsController.cs" />
+    <Compile Include="Controllers\CUENTASController.cs" />
     <Compile Include="Controllers\DEPOSITOesController.cs" />
+    <Compile Include="Controllers\DETALLES_DE_PAGOController.cs" />
     <Compile Include="Controllers\DETALLES_FACTURAController.cs" />
+    <Compile Include="Controllers\DETALLES_FACT_PAGOController.cs" />
     <Compile Include="Controllers\DETALLE_CREDITOController.cs" />
     <Compile Include="Controllers\ENCARGADOesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\NOTAS_DE_CREDITOController.cs" />
+    <Compile Include="Controllers\PAGOSController.cs" />
     <Compile Include="Controllers\PRODUCTOesController.cs" />
     <Compile Include="Controllers\SESIONESController.cs" />
     <Compile Include="Controllers\SESIONsController.cs" />
     <Compile Include="Controllers\STOCKsController.cs" />
     <Compile Include="Controllers\VENTAsController.cs" />
+    <Compile Include="Controllers\VENTAS_DETALLESController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -398,25 +414,65 @@
     <Compile Include="Migrations\202106220215511_ChangeCLIENTEyENCARGADOModels.Designer.cs">
       <DependentUpon>202106220215511_ChangeCLIENTEyENCARGADOModels.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202107011840274_addVDModel.cs" />
+    <Compile Include="Migrations\202107011840274_addVDModel.Designer.cs">
+      <DependentUpon>202107011840274_addVDModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107011910236_addDPModel.cs" />
+    <Compile Include="Migrations\202107011910236_addDPModel.Designer.cs">
+      <DependentUpon>202107011910236_addDPModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107011923303_AddedPAGOSModel.cs" />
+    <Compile Include="Migrations\202107011923303_AddedPAGOSModel.Designer.cs">
+      <DependentUpon>202107011923303_AddedPAGOSModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107011935227_AddedDFPModel.cs" />
+    <Compile Include="Migrations\202107011935227_AddedDFPModel.Designer.cs">
+      <DependentUpon>202107011935227_AddedDFPModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107012000155_addedNCModel.cs" />
+    <Compile Include="Migrations\202107012000155_addedNCModel.Designer.cs">
+      <DependentUpon>202107012000155_addedNCModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107012017284_AddedCUENTASModel.cs" />
+    <Compile Include="Migrations\202107012017284_AddedCUENTASModel.Designer.cs">
+      <DependentUpon>202107012017284_AddedCUENTASModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107012033068_AddedASIENTOModel.cs" />
+    <Compile Include="Migrations\202107012033068_AddedASIENTOModel.Designer.cs">
+      <DependentUpon>202107012033068_AddedASIENTOModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107012038181_AddedASIENTOSDModel.cs" />
+    <Compile Include="Migrations\202107012038181_AddedASIENTOSDModel.Designer.cs">
+      <DependentUpon>202107012038181_AddedASIENTOSDModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\ASIENTO.cs" />
+    <Compile Include="Models\ASIENTOS_DETALLES.cs" />
     <Compile Include="Models\BANCO.cs" />
     <Compile Include="Models\CLIENTE.cs" />
+    <Compile Include="Models\CUENTAS.cs" />
     <Compile Include="Models\DEPOSITO.cs" />
+    <Compile Include="Models\DETALLES_DE PAGO.cs" />
     <Compile Include="Models\DETALLES_FACTURA.cs" />
+    <Compile Include="Models\DETALLES_FACT_PAGO.cs" />
     <Compile Include="Models\DETALLE_CREDITO.cs" />
     <Compile Include="Models\ENCARGADO.cs" />
     <Compile Include="Models\FACTURA.cs" />
     <Compile Include="Models\FORMAS_DE_PAGO.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\NOTAS_DE_CREDITO.cs" />
+    <Compile Include="Models\PAGOS.cs" />
     <Compile Include="Models\PRODUCTO.cs" />
     <Compile Include="Models\SESION.cs" />
     <Compile Include="Models\SESIONES.cs" />
     <Compile Include="Models\STOCK.cs" />
     <Compile Include="Models\TARJETA.cs" />
     <Compile Include="Models\VENTA.cs" />
+    <Compile Include="Models\VENTAS_DETALLES.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -526,6 +582,46 @@
     <Content Include="Views\VENTAs\Details.cshtml" />
     <Content Include="Views\VENTAs\Edit.cshtml" />
     <Content Include="Views\VENTAs\Index.cshtml" />
+    <Content Include="Views\VENTAS_DETALLES\Create.cshtml" />
+    <Content Include="Views\VENTAS_DETALLES\Delete.cshtml" />
+    <Content Include="Views\VENTAS_DETALLES\Details.cshtml" />
+    <Content Include="Views\VENTAS_DETALLES\Edit.cshtml" />
+    <Content Include="Views\VENTAS_DETALLES\Index.cshtml" />
+    <Content Include="Views\DETALLES_DE_PAGO\Create.cshtml" />
+    <Content Include="Views\DETALLES_DE_PAGO\Delete.cshtml" />
+    <Content Include="Views\DETALLES_DE_PAGO\Details.cshtml" />
+    <Content Include="Views\DETALLES_DE_PAGO\Edit.cshtml" />
+    <Content Include="Views\DETALLES_DE_PAGO\Index.cshtml" />
+    <Content Include="Views\PAGOS\Create.cshtml" />
+    <Content Include="Views\PAGOS\Delete.cshtml" />
+    <Content Include="Views\PAGOS\Details.cshtml" />
+    <Content Include="Views\PAGOS\Edit.cshtml" />
+    <Content Include="Views\PAGOS\Index.cshtml" />
+    <Content Include="Views\DETALLES_FACT_PAGO\Create.cshtml" />
+    <Content Include="Views\DETALLES_FACT_PAGO\Delete.cshtml" />
+    <Content Include="Views\DETALLES_FACT_PAGO\Details.cshtml" />
+    <Content Include="Views\DETALLES_FACT_PAGO\Edit.cshtml" />
+    <Content Include="Views\DETALLES_FACT_PAGO\Index.cshtml" />
+    <Content Include="Views\NOTAS_DE_CREDITO\Create.cshtml" />
+    <Content Include="Views\NOTAS_DE_CREDITO\Delete.cshtml" />
+    <Content Include="Views\NOTAS_DE_CREDITO\Details.cshtml" />
+    <Content Include="Views\NOTAS_DE_CREDITO\Edit.cshtml" />
+    <Content Include="Views\NOTAS_DE_CREDITO\Index.cshtml" />
+    <Content Include="Views\CUENTAS\Create.cshtml" />
+    <Content Include="Views\CUENTAS\Delete.cshtml" />
+    <Content Include="Views\CUENTAS\Details.cshtml" />
+    <Content Include="Views\CUENTAS\Edit.cshtml" />
+    <Content Include="Views\CUENTAS\Index.cshtml" />
+    <Content Include="Views\ASIENTOS\Create.cshtml" />
+    <Content Include="Views\ASIENTOS\Delete.cshtml" />
+    <Content Include="Views\ASIENTOS\Details.cshtml" />
+    <Content Include="Views\ASIENTOS\Edit.cshtml" />
+    <Content Include="Views\ASIENTOS\Index.cshtml" />
+    <Content Include="Views\ASIENTOS_DETALLES\Create.cshtml" />
+    <Content Include="Views\ASIENTOS_DETALLES\Delete.cshtml" />
+    <Content Include="Views\ASIENTOS_DETALLES\Details.cshtml" />
+    <Content Include="Views\ASIENTOS_DETALLES\Edit.cshtml" />
+    <Content Include="Views\ASIENTOS_DETALLES\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -597,6 +693,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202106220215511_ChangeCLIENTEyENCARGADOModels.resx">
       <DependentUpon>202106220215511_ChangeCLIENTEyENCARGADOModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107011840274_addVDModel.resx">
+      <DependentUpon>202107011840274_addVDModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107011910236_addDPModel.resx">
+      <DependentUpon>202107011910236_addDPModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107011923303_AddedPAGOSModel.resx">
+      <DependentUpon>202107011923303_AddedPAGOSModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107011935227_AddedDFPModel.resx">
+      <DependentUpon>202107011935227_AddedDFPModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107012000155_addedNCModel.resx">
+      <DependentUpon>202107012000155_addedNCModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107012017284_AddedCUENTASModel.resx">
+      <DependentUpon>202107012017284_AddedCUENTASModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107012033068_AddedASIENTOModel.resx">
+      <DependentUpon>202107012033068_AddedASIENTOModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107012038181_AddedASIENTOSDModel.resx">
+      <DependentUpon>202107012038181_AddedASIENTOSDModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

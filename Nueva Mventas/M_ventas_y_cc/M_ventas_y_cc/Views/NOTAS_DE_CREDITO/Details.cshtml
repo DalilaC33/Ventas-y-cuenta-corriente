@@ -1,0 +1,58 @@
+﻿@model M_ventas_y_cc.Models.NOTAS_DE_CREDITO
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>NOTAS_DE_CREDITO</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha_emision)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fecha_emision)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.concepto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.concepto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.razon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.razon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.monto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.monto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.iva)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.iva)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.NOTAS_DE_CREDITOId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
