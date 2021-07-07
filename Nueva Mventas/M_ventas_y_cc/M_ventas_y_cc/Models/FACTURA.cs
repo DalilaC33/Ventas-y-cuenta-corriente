@@ -9,7 +9,8 @@ namespace M_ventas_y_cc.Models
     {
         public int FACTURAId { get; set; }
 
-        public virtual DETALLES_FACTURA DETALLES_FACCTURAId { get; set; }
+      //  public virtual DETALLES_FACTURA DETALLES_FACCTURAId { get; set; }
+       public string condicion { get; set; }
         public virtual ENCARGADO ENCARGADOId { get; set; }
 
         public virtual CLIENTE CLIENTEId { get; set; }

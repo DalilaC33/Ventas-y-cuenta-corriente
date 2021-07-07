@@ -446,6 +446,10 @@
     <Compile Include="Migrations\202107012038181_AddedASIENTOSDModel.Designer.cs">
       <DependentUpon>202107012038181_AddedASIENTOSDModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202107072051045_changeFactura.cs" />
+    <Compile Include="Migrations\202107072051045_changeFactura.Designer.cs">
+      <DependentUpon>202107072051045_changeFactura.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -717,6 +721,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202107012038181_AddedASIENTOSDModel.resx">
       <DependentUpon>202107012038181_AddedASIENTOSDModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107072051045_changeFactura.resx">
+      <DependentUpon>202107072051045_changeFactura.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
