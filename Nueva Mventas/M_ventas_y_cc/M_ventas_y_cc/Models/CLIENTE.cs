@@ -15,7 +15,7 @@ namespace M_ventas_y_cc.Models
         //public String apellido { get; set; }
         public String telefono { get; set; }
         public String correo { get; set; }
-        public String credito { get; set; }
+        public float credito { get; set; }
 
 
     }

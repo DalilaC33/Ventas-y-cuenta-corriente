@@ -1135,3 +1135,5 @@ C:\Users\Usuario\Music\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_v
 C:\Users\Usuario\Music\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.dll
 C:\Users\Usuario\Music\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.pdb
 C:\Users\Usuario\Music\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.changeFactura.resources
+C:\Users\Usuario\Music\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.changeCredito.resources
+C:\Users\Usuario\Music\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.changeCreditos.resources

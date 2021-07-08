@@ -450,6 +450,14 @@
     <Compile Include="Migrations\202107072051045_changeFactura.Designer.cs">
       <DependentUpon>202107072051045_changeFactura.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202107080046571_changeCredito.cs" />
+    <Compile Include="Migrations\202107080046571_changeCredito.Designer.cs">
+      <DependentUpon>202107080046571_changeCredito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107080104586_changeCreditos.cs" />
+    <Compile Include="Migrations\202107080104586_changeCreditos.Designer.cs">
+      <DependentUpon>202107080104586_changeCreditos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -724,6 +732,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202107072051045_changeFactura.resx">
       <DependentUpon>202107072051045_changeFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107080046571_changeCredito.resx">
+      <DependentUpon>202107080046571_changeCredito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107080104586_changeCreditos.resx">
+      <DependentUpon>202107080104586_changeCreditos.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
