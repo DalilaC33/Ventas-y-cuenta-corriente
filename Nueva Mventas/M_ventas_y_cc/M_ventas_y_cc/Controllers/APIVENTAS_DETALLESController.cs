@@ -35,6 +35,9 @@ namespace M_ventas_y_cc.Controllers
             return Ok(vENTAS_DETALLES);
         }
 
+
+
+
         // PUT: api/APIVENTAS_DETALLES/5
         [ResponseType(typeof(void))]
         public IHttpActionResult PutVENTAS_DETALLES(int id, VENTAS_DETALLES vENTAS_DETALLES)

@@ -311,6 +311,7 @@
     <Compile Include="Controllers\APIDETALLES_FACT_PAGOController.cs" />
     <Compile Include="Controllers\APIDETALLE_CREDITOController.cs" />
     <Compile Include="Controllers\APIENCARGADOesController.cs" />
+    <Compile Include="Controllers\APIFACTURAsController.cs" />
     <Compile Include="Controllers\APINOTAS_DE_CREDITOController.cs" />
     <Compile Include="Controllers\APIPAGOSController.cs" />
     <Compile Include="Controllers\APIPRODUCTOesController.cs" />

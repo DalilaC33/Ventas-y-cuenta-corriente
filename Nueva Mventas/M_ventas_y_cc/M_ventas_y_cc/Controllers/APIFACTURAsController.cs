@@ -12,44 +12,44 @@ using M_ventas_y_cc.Models;
 
 namespace M_ventas_y_cc.Controllers
 {
-    public class APIVENTAsController : ApiController
+    public class APIFACTURAsController : ApiController
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        // GET: api/APIVENTAs
-        public IQueryable<VENTA> GetVENTA()
+        // GET: api/APIFACTURAs
+        public IQueryable<FACTURA> GetFACTURA()
         {
-            return db.VENTA;
+            return db.FACTURA;
         }
 
-        // GET: api/APIVENTAs/5
-        [ResponseType(typeof(VENTA))]
-        public IHttpActionResult GetVENTA(int id)
+        // GET: api/APIFACTURAs/5
+        [ResponseType(typeof(FACTURA))]
+        public IHttpActionResult GetFACTURA(int id)
         {
-            VENTA vENTA = db.VENTA.Find(id);
-            if (vENTA == null)
+            FACTURA fACTURA = db.FACTURA.Find(id);
+            if (fACTURA == null)
             {
                 return NotFound();
             }
 
-            return Ok(vENTA);
+            return Ok(fACTURA);
         }
 
-        // PUT: api/APIVENTAs/5
+        // PUT: api/APIFACTURAs/5
         [ResponseType(typeof(void))]
-        public IHttpActionResult PutVENTA(int id, VENTA vENTA)
+        public IHttpActionResult PutFACTURA(int id, FACTURA fACTURA)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            if (id != vENTA.VENTAId)
+            if (id != fACTURA.FACTURAId)
             {
                 return BadRequest();
             }
 
-            db.Entry(vENTA).State = EntityState.Modified;
+            db.Entry(fACTURA).State = EntityState.Modified;
 
             try
             {
@@ -57,7 +57,7 @@ namespace M_ventas_y_cc.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!VENTAExists(id))
+                if (!FACTURAExists(id))
                 {
                     return NotFound();
                 }
@@ -70,37 +70,35 @@ namespace M_ventas_y_cc.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
-        // POST: api/APIVENTAs
-        [ResponseType(typeof(VENTA))]
-        public IHttpActionResult PostVENTA(VENTA vENTA)
+        // POST: api/APIFACTURAs
+        [ResponseType(typeof(FACTURA))]
+        public IHttpActionResult PostFACTURA(FACTURA fACTURA)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            db.VENTA.Add(vENTA);
+            db.FACTURA.Add(fACTURA);
             db.SaveChanges();
 
-            return CreatedAtRoute("DefaultApi", new { id = vENTA.VENTAId }, vENTA);
+            return CreatedAtRoute("DefaultApi", new { id = fACTURA.FACTURAId }, fACTURA);
         }
 
-        
-
-    // DELETE: api/APIVENTAs/5
-    [ResponseType(typeof(VENTA))]
-        public IHttpActionResult DeleteVENTA(int id)
+        // DELETE: api/APIFACTURAs/5
+        [ResponseType(typeof(FACTURA))]
+        public IHttpActionResult DeleteFACTURA(int id)
         {
-            VENTA vENTA = db.VENTA.Find(id);
-            if (vENTA == null)
+            FACTURA fACTURA = db.FACTURA.Find(id);
+            if (fACTURA == null)
             {
                 return NotFound();
             }
 
-            db.VENTA.Remove(vENTA);
+            db.FACTURA.Remove(fACTURA);
             db.SaveChanges();
 
-            return Ok(vENTA);
+            return Ok(fACTURA);
         }
 
         protected override void Dispose(bool disposing)
@@ -112,9 +110,9 @@ namespace M_ventas_y_cc.Controllers
             base.Dispose(disposing);
         }
 
-        private bool VENTAExists(int id)
+        private bool FACTURAExists(int id)
         {
-            return db.VENTA.Count(e => e.VENTAId == id) > 0;
+            return db.FACTURA.Count(e => e.FACTURAId == id) > 0;
         }
     }
 }
