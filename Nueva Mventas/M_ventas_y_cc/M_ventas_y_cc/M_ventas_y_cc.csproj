@@ -328,6 +328,7 @@
     <Compile Include="Controllers\DETALLES_FACTURAController.cs" />
     <Compile Include="Controllers\DETALLES_FACT_PAGOController.cs" />
     <Compile Include="Controllers\DETALLE_CREDITOController.cs" />
+    <Compile Include="Controllers\EmpleadosLoginController.cs" />
     <Compile Include="Controllers\ENCARGADOesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -637,6 +638,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\EmpleadosLogin\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

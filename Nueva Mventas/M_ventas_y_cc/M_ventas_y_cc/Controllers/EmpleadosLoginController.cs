@@ -29,5 +29,4 @@ namespace M_ventas_y_cc.Controllers
                 return Ok(new { status = 200, isSuccess = true, message = "User Login successfully", UserDetails = log });
         }
     }
-}   
-  
+}
