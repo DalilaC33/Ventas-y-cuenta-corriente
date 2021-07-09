@@ -79,6 +79,9 @@ namespace M_ventas_y_cc.Controllers
                 return BadRequest(ModelState);
             }
 
+
+           //dETALLES_FACT_PAGO.DETALLE_CREDITOId = db.DETALLES_FACT_PAGO.Find(dETALLES_FACT_PAGO.Find(DETALLE_CREDITOId.);
+
             db.DETALLES_FACT_PAGO.Add(dETALLES_FACT_PAGO);
             db.SaveChanges();
 

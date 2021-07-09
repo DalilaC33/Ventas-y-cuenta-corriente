@@ -79,6 +79,10 @@ namespace M_ventas_y_cc.Controllers
                 return BadRequest(ModelState);
             }
 
+
+            dETALLES_DE_PAGO.TARJETAId = db.TARJETA.Find(1);
+            dETALLES_DE_PAGO.FORMAS_DE_PAGOId = db.FORMAS_DE_PAGO.Find(1);
+
             db.DETALLES_DE_PAGO.Add(dETALLES_DE_PAGO);
             db.SaveChanges();
 
