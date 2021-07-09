@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
@@ -26,7 +27,11 @@ namespace M_ventas_y_cc.Controllers
                 return Ok(new { status = 401, isSuccess = false, message = "Invalid User", });
             }
             else
-                return Ok(new { status = 200, isSuccess = true, message = "User Login successfully", UserDetails = log });
+                return Ok(new { status = 200, 
+                                isSuccess = true, 
+                                message = "User Login successfully", 
+                                UserDetails = log,
+                                });
         }
     }
 }

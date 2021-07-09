@@ -82,6 +82,9 @@ namespace M_ventas_y_cc.Controllers
                 return BadRequest(ModelState);
             }
 
+            vENTAS_DETALLES.VENTAId = db.VENTA.Find(vENTAS_DETALLES.VENTAId.iva);
+            vENTAS_DETALLES.PRODUCTOId = db.PRODUCTO.Find(vENTAS_DETALLES.PRODUCTOId.precio); 
+
             db.VENTAS_DETALLES.Add(vENTAS_DETALLES);
             db.SaveChanges();
 

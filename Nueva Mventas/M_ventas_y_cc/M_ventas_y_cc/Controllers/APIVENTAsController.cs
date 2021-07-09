@@ -79,6 +79,8 @@ namespace M_ventas_y_cc.Controllers
                 return BadRequest(ModelState);
             }
 
+            vENTA.fecha = DateTime.Today;
+            vENTA.CLIENTEId = db.CLIENTE.Find(vENTA.CLIENTEId.credito);
             db.VENTA.Add(vENTA);
             db.SaveChanges();
 

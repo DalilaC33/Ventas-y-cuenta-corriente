@@ -79,6 +79,8 @@ namespace M_ventas_y_cc.Controllers
                 return BadRequest(ModelState);
             }
 
+            fACTURA.CLIENTEId = db.CLIENTE.Find(fACTURA.CLIENTEId.credito); 
+
             db.FACTURA.Add(fACTURA);
             db.SaveChanges();
 

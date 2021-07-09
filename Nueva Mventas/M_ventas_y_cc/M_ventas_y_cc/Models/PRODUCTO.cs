@@ -13,9 +13,5 @@ namespace M_ventas_y_cc.Models
         public String descripcion { get; set; }
         public int precio { get; set; }
 
-
-
-
-
     }
 }
