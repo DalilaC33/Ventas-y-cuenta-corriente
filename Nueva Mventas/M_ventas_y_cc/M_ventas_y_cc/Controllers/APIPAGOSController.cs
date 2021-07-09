@@ -79,6 +79,10 @@ namespace M_ventas_y_cc.Controllers
                 return BadRequest(ModelState);
             }
 
+            pAGOS.fecha = DateTime.Today;
+            pAGOS.CLIENTEId = db.CLIENTE.Find(pAGOS.CLIENTEId.credito);
+           
+
             db.PAGOS.Add(pAGOS);
             db.SaveChanges();
 

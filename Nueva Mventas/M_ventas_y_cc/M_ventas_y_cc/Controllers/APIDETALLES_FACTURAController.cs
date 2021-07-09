@@ -79,6 +79,14 @@ namespace M_ventas_y_cc.Controllers
                 return BadRequest(ModelState);
             }
 
+            dETALLES_FACTURA.fecha = DateTime.Today;
+            dETALLES_FACTURA.FACTURAId = db.FACTURA.Find(dETALLES_FACTURA.total);
+
+
+            dETALLES_FACTURA.fecha = DateTime.Today;
+            dETALLES_FACTURA.DETALLE_CREDITOId = db.DETALLE_CREDITOS.Find(dETALLES_FACTURA.total);
+
+
             db.DETALLES_FACTURA.Add(dETALLES_FACTURA);
             db.SaveChanges();
 
