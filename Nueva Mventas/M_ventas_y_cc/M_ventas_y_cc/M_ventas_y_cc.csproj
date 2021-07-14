@@ -331,6 +331,7 @@
     <Compile Include="Controllers\DETALLE_CREDITOController.cs" />
     <Compile Include="Controllers\EmpleadosLoginController.cs" />
     <Compile Include="Controllers\ENCARGADOesController.cs" />
+    <Compile Include="Controllers\FACTURAsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\NOTAS_DE_CREDITOController.cs" />
@@ -459,6 +460,30 @@
     <Compile Include="Migrations\202107080104586_changeCreditos.cs" />
     <Compile Include="Migrations\202107080104586_changeCreditos.Designer.cs">
       <DependentUpon>202107080104586_changeCreditos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107141951376_ChangeStrings.cs" />
+    <Compile Include="Migrations\202107141951376_ChangeStrings.Designer.cs">
+      <DependentUpon>202107141951376_ChangeStrings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107142017480_changePagos.cs" />
+    <Compile Include="Migrations\202107142017480_changePagos.Designer.cs">
+      <DependentUpon>202107142017480_changePagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107142023295_deleteEstadoDetFact.cs" />
+    <Compile Include="Migrations\202107142023295_deleteEstadoDetFact.Designer.cs">
+      <DependentUpon>202107142023295_deleteEstadoDetFact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107142029221_deletecreditoDetFact.cs" />
+    <Compile Include="Migrations\202107142029221_deletecreditoDetFact.Designer.cs">
+      <DependentUpon>202107142029221_deletecreditoDetFact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107142035260_deletecreditoDetFactReal.cs" />
+    <Compile Include="Migrations\202107142035260_deletecreditoDetFactReal.Designer.cs">
+      <DependentUpon>202107142035260_deletecreditoDetFactReal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107142048332_addedFacturatoDetPago.cs" />
+    <Compile Include="Migrations\202107142048332_addedFacturatoDetPago.Designer.cs">
+      <DependentUpon>202107142048332_addedFacturatoDetPago.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -636,6 +661,11 @@
     <Content Include="Views\ASIENTOS_DETALLES\Details.cshtml" />
     <Content Include="Views\ASIENTOS_DETALLES\Edit.cshtml" />
     <Content Include="Views\ASIENTOS_DETALLES\Index.cshtml" />
+    <Content Include="Views\FACTURAs\Create.cshtml" />
+    <Content Include="Views\FACTURAs\Delete.cshtml" />
+    <Content Include="Views\FACTURAs\Details.cshtml" />
+    <Content Include="Views\FACTURAs\Edit.cshtml" />
+    <Content Include="Views\FACTURAs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -741,6 +771,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202107080104586_changeCreditos.resx">
       <DependentUpon>202107080104586_changeCreditos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107141951376_ChangeStrings.resx">
+      <DependentUpon>202107141951376_ChangeStrings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107142017480_changePagos.resx">
+      <DependentUpon>202107142017480_changePagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107142023295_deleteEstadoDetFact.resx">
+      <DependentUpon>202107142023295_deleteEstadoDetFact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107142029221_deletecreditoDetFact.resx">
+      <DependentUpon>202107142029221_deletecreditoDetFact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107142035260_deletecreditoDetFactReal.resx">
+      <DependentUpon>202107142035260_deletecreditoDetFactReal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107142048332_addedFacturatoDetPago.resx">
+      <DependentUpon>202107142048332_addedFacturatoDetPago.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

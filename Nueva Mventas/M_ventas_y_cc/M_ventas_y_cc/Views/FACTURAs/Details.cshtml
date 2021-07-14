@@ -1,0 +1,58 @@
+﻿@model M_ventas_y_cc.Models.FACTURA
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>FACTURA</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.condicion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.condicion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.total)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.total)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.iva)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.iva)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.saldo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.saldo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.FACTURAId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

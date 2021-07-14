@@ -13,6 +13,6 @@ namespace M_ventas_y_cc.Models
         public int NRO_CUOTA { get; set; }
         public Boolean PAGADO { get; set; }
 
-
+        public virtual PAGOS PAGOSId { get; set; }
     }
 }

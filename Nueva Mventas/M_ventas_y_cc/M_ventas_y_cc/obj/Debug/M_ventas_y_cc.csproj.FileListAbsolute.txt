@@ -1375,3 +1375,12 @@ C:\Users\Reni\Documents\projventa (2)\Ventas-y-cuenta-corriente\Nueva Mventas\M_
 C:\Users\Reni\Documents\projventa (2)\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.csproj.CopyComplete
 C:\Users\Reni\Documents\projventa (2)\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.dll
 C:\Users\Reni\Documents\projventa (2)\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.pdb
+C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.changeFactura.resources
+C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.changeCredito.resources
+C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.changeCreditos.resources
+C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.ChangeStrings.resources
+C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.changePagos.resources
+C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.deleteEstadoDetFact.resources
+C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.deletecreditoDetFact.resources
+C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.deletecreditoDetFactReal.resources
+C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.addedFacturatoDetPago.resources

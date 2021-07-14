@@ -84,7 +84,7 @@ namespace M_ventas_y_cc.Controllers
 
 
             dETALLES_FACTURA.fecha = DateTime.Today;
-            dETALLES_FACTURA.DETALLE_CREDITOId = db.DETALLE_CREDITOS.Find(dETALLES_FACTURA.total);
+         //   dETALLES_FACTURA.DETALLE_CREDITOId = db.DETALLE_CREDITOS.Find(dETALLES_FACTURA.total);
 
 
             db.DETALLES_FACTURA.Add(dETALLES_FACTURA);

@@ -1,0 +1,57 @@
+﻿@model IEnumerable<M_ventas_y_cc.Models.FACTURA>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.condicion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.total)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.iva)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.saldo)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.condicion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.total)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.iva)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.saldo)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.FACTURAId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.FACTURAId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.FACTURAId })
+        </td>
+    </tr>
+}
+
+</table>

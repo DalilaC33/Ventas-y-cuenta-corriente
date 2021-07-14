@@ -11,14 +11,14 @@ namespace M_ventas_y_cc.Models
         public int ENCARGADOId { get; set; }
 
 
-        public string usuario { get; set; }
-        public string contraseña { get; set; }
-        public string nombre { get; set; }
+        public String usuario { get; set; }
+        public String contraseña { get; set; }
+        public String nombre { get; set; }
       //  public string apellido { get; set; }
-        public string ci { get; set; }
-        public string telefono { get; set; }
-        public string correo { get; set; }
-        public string direccion { get; set; }
+        public String ci { get; set; }
+        public String telefono { get; set; }
+        public String correo { get; set; }
+        public String direccion { get; set; }
 
 
 

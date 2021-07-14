@@ -20,7 +20,7 @@ namespace M_ventas_y_cc.Models
 
         public float total { get; set; }
 
-        public String estado { get; set; }
+      //  public String estado { get; set; }
 
 
     }

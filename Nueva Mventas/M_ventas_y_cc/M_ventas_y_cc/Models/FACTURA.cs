@@ -10,16 +10,16 @@ namespace M_ventas_y_cc.Models
         public int FACTURAId { get; set; }
 
       //  public virtual DETALLES_FACTURA DETALLES_FACCTURAId { get; set; }
-       public string condicion { get; set; }
+       public String condicion { get; set; }
         public virtual ENCARGADO ENCARGADOId { get; set; }
 
         public virtual CLIENTE CLIENTEId { get; set; }
 
-        public string estado { get; set; }
+        public String estado { get; set; }
 
         public float total { get; set; }
         public float iva { get; set; }
-        public string saldo { get; set; }
+        public String saldo { get; set; }
 
 
 

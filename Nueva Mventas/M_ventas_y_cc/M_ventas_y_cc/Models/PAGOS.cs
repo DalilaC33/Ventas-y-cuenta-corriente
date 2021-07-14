@@ -11,7 +11,7 @@ namespace M_ventas_y_cc.Models
         public virtual CLIENTE CLIENTEId { get; set; }
         public virtual VENTA VENTAId { get; set; }
 
-       public virtual DETALLES_DE_PAGO DETALLES_DE_PAGO { get; set; }
+     //  public virtual DETALLES_DE_PAGO DETALLES_DE_PAGO { get; set; }
 
         public float total { get; set; }
 
