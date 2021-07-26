@@ -8,10 +8,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
-using System.Web.Mvc;
-using AutoMapper;
 using M_ventas_y_cc.Models;
-using M_ventas_y_cc.ViewModels;
 
 namespace M_ventas_y_cc.Controllers
 {
@@ -73,6 +70,7 @@ namespace M_ventas_y_cc.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
+
         // POST: api/APIVENTAs
         [ResponseType(typeof(VENTA))]
         public IHttpActionResult PostVENTA(VENTA vENTA)
@@ -84,7 +82,7 @@ namespace M_ventas_y_cc.Controllers
 
             vENTA.fecha = DateTime.Today;
 
-                    vENTA.ENCARGADOId   = db.ENCARGADOS.Find(vENTA.ENCARGADOId.encargadoNum);
+            vENTA.ENCARGADOId = db.ENCARGADOS.Find(vENTA.ENCARGADOId.encargadoNum);
             vENTA.CLIENTEId = db.CLIENTE.Find(vENTA.CLIENTEId.credito);
             db.VENTA.Add(vENTA);
             db.SaveChanges();
@@ -92,10 +90,10 @@ namespace M_ventas_y_cc.Controllers
             return CreatedAtRoute("DefaultApi", new { id = vENTA.VENTAId }, vENTA);
         }
 
-        
 
-    // DELETE: api/APIVENTAs/5
-    [ResponseType(typeof(VENTA))]
+
+        // DELETE: api/APIVENTAs/5
+        [ResponseType(typeof(VENTA))]
         public IHttpActionResult DeleteVENTA(int id)
         {
             VENTA vENTA = db.VENTA.Find(id);

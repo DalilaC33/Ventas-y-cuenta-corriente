@@ -46,7 +46,7 @@ namespace M_ventas_y_cc.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "VENTAId,fecha,estado,total,iva")] VENTA vENTA)
+        public ActionResult Create([Bind(Include = "VENTAId,fecha,numVenta,estado,total,iva")] VENTA vENTA)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace M_ventas_y_cc.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "VENTAId,fecha,estado,total,iva")] VENTA vENTA)
+        public ActionResult Edit([Bind(Include = "VENTAId,fecha,numVenta,estado,total,iva")] VENTA vENTA)
         {
             if (ModelState.IsValid)
             {
