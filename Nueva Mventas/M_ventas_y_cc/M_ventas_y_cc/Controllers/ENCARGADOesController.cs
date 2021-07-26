@@ -46,7 +46,7 @@ namespace M_ventas_y_cc.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ENCARGADOId,usuario,contraseña,nombre,apellido,ci,telefono,correo,direccion")] ENCARGADO eNCARGADO)
+        public ActionResult Create([Bind(Include = "ENCARGADOId,usuario,contraseña,nombre,ci,telefono,correo,direccion,encargadoNum")] ENCARGADO eNCARGADO)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace M_ventas_y_cc.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ENCARGADOId,usuario,contraseña,nombre,apellido,ci,telefono,correo,direccion")] ENCARGADO eNCARGADO)
+        public ActionResult Edit([Bind(Include = "ENCARGADOId,usuario,contraseña,nombre,ci,telefono,correo,direccion,encargadoNum")] ENCARGADO eNCARGADO)
         {
             if (ModelState.IsValid)
             {

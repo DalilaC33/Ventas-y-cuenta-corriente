@@ -10,7 +10,7 @@ namespace M_ventas_y_cc.Models
 
         public int ENCARGADOId { get; set; }
 
-
+        
         public String usuario { get; set; }
         public String contraseña { get; set; }
         public String nombre { get; set; }
@@ -19,6 +19,8 @@ namespace M_ventas_y_cc.Models
         public String telefono { get; set; }
         public String correo { get; set; }
         public String direccion { get; set; }
+
+        public int encargadoNum { get; set; }
 
 
 

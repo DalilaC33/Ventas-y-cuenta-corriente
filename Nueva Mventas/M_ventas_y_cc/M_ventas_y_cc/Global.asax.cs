@@ -1,3 +1,5 @@
+using AutoMapper;
+using M_ventas_y_cc.App_Start;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +20,8 @@ namespace M_ventas_y_cc
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            Mapper.Initialize(c => c.AddProfile<MappingPorfile>());
         }
     }
 }

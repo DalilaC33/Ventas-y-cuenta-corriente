@@ -15,6 +15,8 @@ namespace M_ventas_y_cc.Models
 
         public virtual ENCARGADO ENCARGADOId { get; set; }
 
+        
+
         public virtual CLIENTE CLIENTEId { get; set; }
 
         public DateTime fecha { get; set; }

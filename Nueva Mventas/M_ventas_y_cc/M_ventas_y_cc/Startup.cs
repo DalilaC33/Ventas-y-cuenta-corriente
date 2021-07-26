@@ -1,4 +1,6 @@
-﻿using Microsoft.Owin;
+﻿
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Owin;
 using Owin;
 
 [assembly: OwinStartupAttribute(typeof(M_ventas_y_cc.Startup))]
@@ -10,5 +12,9 @@ namespace M_ventas_y_cc
         {
             ConfigureAuth(app);
         }
+
+       
+
+
     }
 }
