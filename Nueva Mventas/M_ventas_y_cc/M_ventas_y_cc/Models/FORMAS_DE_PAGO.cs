@@ -12,6 +12,8 @@ namespace M_ventas_y_cc.Models
         public String nombre { get; set; }
         public String descripcion { get; set; }
 
+        public int numFDP { get; set; }
+
 
 
 

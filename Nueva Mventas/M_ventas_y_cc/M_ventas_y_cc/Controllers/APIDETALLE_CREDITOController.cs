@@ -78,10 +78,10 @@ namespace M_ventas_y_cc.Controllers
             {
                 return BadRequest(ModelState);
             }
-
+            dETALLE_CREDITO.PAGOSId = db.PAGOS.Find(dETALLE_CREDITO.PAGOSId.numPago);
             db.DETALLE_CREDITOS.Add(dETALLE_CREDITO);
             db.SaveChanges();
-
+         
             return CreatedAtRoute("DefaultApi", new { id = dETALLE_CREDITO.DETALLE_CREDITOId }, dETALLE_CREDITO);
         }
 

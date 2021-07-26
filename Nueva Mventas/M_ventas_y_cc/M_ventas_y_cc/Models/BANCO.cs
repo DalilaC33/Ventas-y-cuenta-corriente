@@ -11,6 +11,9 @@ namespace M_ventas_y_cc.Models
         public int BANCOId { get; set; }
         public String nombre { get; set; }
 
+        public int numBanco { get; set; }
+
+
 
     }
 }

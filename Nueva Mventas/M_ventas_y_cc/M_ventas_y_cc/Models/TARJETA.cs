@@ -11,6 +11,6 @@ namespace M_ventas_y_cc.Models
         public String marca { get; set; }
         public String tipo { get; set; }
 
-
+        public int numTarjeta { get; set; }
     }
 }
