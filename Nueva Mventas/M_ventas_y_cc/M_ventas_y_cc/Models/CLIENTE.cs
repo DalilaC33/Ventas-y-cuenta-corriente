@@ -8,6 +8,8 @@ namespace M_ventas_y_cc.Models
     public class CLIENTE
     {
         public int CLIENTEId { get; set; }
+
+       
         public string ruc { get; set; }
 
         public String nombre { get; set; }

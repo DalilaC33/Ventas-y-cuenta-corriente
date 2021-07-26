@@ -493,6 +493,10 @@
     <Compile Include="Migrations\202107260011317_AddedENM.Designer.cs">
       <DependentUpon>202107260011317_AddedENM.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202107260454387_ventaCampos.cs" />
+    <Compile Include="Migrations\202107260454387_ventaCampos.Designer.cs">
+      <DependentUpon>202107260454387_ventaCampos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -802,6 +806,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202107260011317_AddedENM.resx">
       <DependentUpon>202107260011317_AddedENM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107260454387_ventaCampos.resx">
+      <DependentUpon>202107260454387_ventaCampos.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

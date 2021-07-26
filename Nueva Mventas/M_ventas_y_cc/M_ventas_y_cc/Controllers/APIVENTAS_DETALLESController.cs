@@ -35,9 +35,6 @@ namespace M_ventas_y_cc.Controllers
             return Ok(vENTAS_DETALLES);
         }
 
-
-
-
         // PUT: api/APIVENTAS_DETALLES/5
         [ResponseType(typeof(void))]
         public IHttpActionResult PutVENTAS_DETALLES(int id, VENTAS_DETALLES vENTAS_DETALLES)
@@ -73,6 +70,7 @@ namespace M_ventas_y_cc.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
+
         // POST: api/APIVENTAS_DETALLES
         [ResponseType(typeof(VENTAS_DETALLES))]
         public IHttpActionResult PostVENTAS_DETALLES(VENTAS_DETALLES vENTAS_DETALLES)
@@ -83,13 +81,14 @@ namespace M_ventas_y_cc.Controllers
             }
 
             vENTAS_DETALLES.VENTAId = db.VENTA.Find(vENTAS_DETALLES.VENTAId.iva);
-            vENTAS_DETALLES.PRODUCTOId = db.PRODUCTO.Find(vENTAS_DETALLES.PRODUCTOId.precio); 
+            vENTAS_DETALLES.PRODUCTOId = db.PRODUCTO.Find(vENTAS_DETALLES.PRODUCTOId.precio);
 
             db.VENTAS_DETALLES.Add(vENTAS_DETALLES);
             db.SaveChanges();
 
             return CreatedAtRoute("DefaultApi", new { id = vENTAS_DETALLES.VENTAS_DETALLESId }, vENTAS_DETALLES);
         }
+
 
         // DELETE: api/APIVENTAS_DETALLES/5
         [ResponseType(typeof(VENTAS_DETALLES))]
