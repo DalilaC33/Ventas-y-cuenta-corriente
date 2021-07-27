@@ -9,6 +9,7 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
 using M_ventas_y_cc.Models;
+using M_ventas_y_cc.Models.ViewModels;
 
 namespace M_ventas_y_cc.Controllers
 {
@@ -17,9 +18,27 @@ namespace M_ventas_y_cc.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: api/APIVENTAs
-        public IQueryable<VENTA> GetVENTA()
+        public IList<VENTAVM> GetVENTA()
         {
-            return db.VENTA;
+            var venta = db.VENTA.Include(p => p.ENCARGADOId).Include(p => p.CLIENTEId);
+            IList<VENTAVM> result = new List<VENTAVM>();
+
+            foreach(VENTA ven in venta)
+            {
+                result.Add(new VENTAVM()
+                {
+                    VENTAId = ven.VENTAId,
+                    ENCARGADOId = ven.ENCARGADOId,
+                    CLIENTEId = ven.CLIENTEId,
+                    fecha = ven.fecha,
+                    estado = ven.estado
+            });
+
+                
+            }
+            return result;
+
+           
         }
 
         // GET: api/APIVENTAs/5
