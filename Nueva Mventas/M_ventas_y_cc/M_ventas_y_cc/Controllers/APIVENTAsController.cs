@@ -51,8 +51,27 @@ namespace M_ventas_y_cc.Controllers
                 return NotFound();
             }
 
-            return Ok(vENTA);
+            var venta = db.VENTA.Include(p => p.ENCARGADOId).Include(p => p.CLIENTEId);
+
+            IList<VENTAVM> result = new List<VENTAVM>();
+
+
+            result.Add(new VENTAVM()
+            {
+                VENTAId = vENTA.VENTAId,
+                nombreEncargado = vENTA.ENCARGADOId.nombre,
+                nombreCliente = vENTA.CLIENTEId.nombre,
+                iva= vENTA.iva,
+                total= vENTA.total,
+                ruc = vENTA.CLIENTEId.ruc,
+                fecha = vENTA.fecha,
+                estado = vENTA.estado
+            });
+
+
+            return Ok(result);
         }
+        
 
         // PUT: api/APIVENTAs/5
         [ResponseType(typeof(void))]

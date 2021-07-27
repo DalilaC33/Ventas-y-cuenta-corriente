@@ -13,7 +13,17 @@ namespace M_ventas_y_cc.Models.ViewModels
 
         public virtual ENCARGADO ENCARGADOId { get; set; }
 
+        public String ruc { get; set; }
 
+        public float total { get; set; }
+
+        public float iva { get; set; }
+
+        public string nombreEncargado { get; set; }
+
+        public string nombreCliente { get; set; }
+
+        public int facturado { get; set; }
 
         public virtual CLIENTE CLIENTEId { get; set; }
 
