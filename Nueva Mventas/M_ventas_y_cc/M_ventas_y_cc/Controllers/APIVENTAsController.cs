@@ -58,10 +58,13 @@ namespace M_ventas_y_cc.Controllers
 
             result.Add(new VENTAVM()
             {
+                
+                
                 VENTAId = vENTA.VENTAId,
                 nombreEncargado = vENTA.ENCARGADOId.nombre,
                 nombreCliente = vENTA.CLIENTEId.nombre,
-                iva= vENTA.iva,
+               
+                iva = vENTA.iva,
                 total= vENTA.total,
                 ruc = vENTA.CLIENTEId.ruc,
                 fecha = vENTA.fecha,
