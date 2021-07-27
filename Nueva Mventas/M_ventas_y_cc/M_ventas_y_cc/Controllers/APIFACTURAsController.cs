@@ -70,7 +70,6 @@ namespace M_ventas_y_cc.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
-
         // POST: api/APIFACTURAs
         [ResponseType(typeof(FACTURA))]
         public IHttpActionResult PostFACTURA(FACTURA fACTURA)
@@ -82,13 +81,12 @@ namespace M_ventas_y_cc.Controllers
 
             fACTURA.CLIENTEId = db.CLIENTE.Find(fACTURA.CLIENTEId.credito);
             fACTURA.ENCARGADOId = db.ENCARGADOS.Find(fACTURA.ENCARGADOId.encargadoNum);
-
+            fACTURA.VENTAId = db.VENTA.Find(fACTURA.VENTAId.numVenta);
             db.FACTURA.Add(fACTURA);
             db.SaveChanges();
 
             return CreatedAtRoute("DefaultApi", new { id = fACTURA.FACTURAId }, fACTURA);
         }
-
         // DELETE: api/APIFACTURAs/5
         [ResponseType(typeof(FACTURA))]
         public IHttpActionResult DeleteFACTURA(int id)

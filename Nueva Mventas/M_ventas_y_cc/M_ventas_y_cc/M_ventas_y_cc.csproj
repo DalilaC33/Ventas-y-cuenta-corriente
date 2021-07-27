@@ -517,6 +517,10 @@
     <Compile Include="Migrations\202107262333037_ncProduct.Designer.cs">
       <DependentUpon>202107262333037_ncProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202107271448594_campoVentaaFct.cs" />
+    <Compile Include="Migrations\202107271448594_campoVentaaFct.Designer.cs">
+      <DependentUpon>202107271448594_campoVentaaFct.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -844,6 +848,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202107262333037_ncProduct.resx">
       <DependentUpon>202107262333037_ncProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107271448594_campoVentaaFct.resx">
+      <DependentUpon>202107271448594_campoVentaaFct.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

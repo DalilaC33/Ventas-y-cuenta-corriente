@@ -26,6 +26,9 @@
         <th>
             @Html.DisplayNameFor(model => model.saldo)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.factNum)
+        </th>
         <th></th>
     </tr>
 
@@ -45,6 +48,9 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.saldo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.factNum)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.FACTURAId }) |
