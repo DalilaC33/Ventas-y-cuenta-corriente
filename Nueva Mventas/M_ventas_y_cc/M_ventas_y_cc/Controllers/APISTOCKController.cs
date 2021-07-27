@@ -78,7 +78,7 @@ namespace M_ventas_y_cc.Controllers
             {
                 return BadRequest(ModelState);
             }
-
+            sTOCK.PRODUCTOId = db.PRODUCTO.Find(sTOCK.PRODUCTOId.numPRODUCTO);
             db.STOCK.Add(sTOCK);
             db.SaveChanges();
 

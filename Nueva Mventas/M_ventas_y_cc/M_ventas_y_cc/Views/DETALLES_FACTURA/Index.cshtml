@@ -20,9 +20,7 @@
         <th>
             @Html.DisplayNameFor(model => model.total)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.estado)
-        </th>
+       
         <th></th>
     </tr>
 
@@ -37,9 +35,7 @@
         <td>
             @Html.DisplayFor(modelItem => item.total)
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.estado)
-        </td>
+        
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.DETALLES_FACTURAId }) |
             @Html.ActionLink("Details", "Details", new { id=item.DETALLES_FACTURAId }) |

@@ -81,7 +81,8 @@ namespace M_ventas_y_cc.Controllers
             }
 
             vENTAS_DETALLES.VENTAId = db.VENTA.Find(vENTAS_DETALLES.VENTAId.iva);
-            vENTAS_DETALLES.PRODUCTOId = db.PRODUCTO.Find(vENTAS_DETALLES.PRODUCTOId.precio);
+          
+            vENTAS_DETALLES.PRODUCTOId = db.PRODUCTO.Find(vENTAS_DETALLES.PRODUCTOId.numPRODUCTO);
 
             db.VENTAS_DETALLES.Add(vENTAS_DETALLES);
             db.SaveChanges();

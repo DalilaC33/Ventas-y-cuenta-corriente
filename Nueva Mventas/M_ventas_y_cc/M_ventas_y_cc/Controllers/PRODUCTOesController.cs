@@ -46,7 +46,7 @@ namespace M_ventas_y_cc.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "PRODUCTOId,codigo,nombre,descripcion,precio")] PRODUCTO pRODUCTO)
+        public ActionResult Create([Bind(Include = "PRODUCTOId,numPRODUCTO,codigo,nombre,descripcion,precio")] PRODUCTO pRODUCTO)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace M_ventas_y_cc.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "PRODUCTOId,codigo,nombre,descripcion,precio")] PRODUCTO pRODUCTO)
+        public ActionResult Edit([Bind(Include = "PRODUCTOId,numPRODUCTO,codigo,nombre,descripcion,precio")] PRODUCTO pRODUCTO)
         {
             if (ModelState.IsValid)
             {

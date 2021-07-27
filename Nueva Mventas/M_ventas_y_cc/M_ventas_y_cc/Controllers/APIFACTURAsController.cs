@@ -70,6 +70,7 @@ namespace M_ventas_y_cc.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
+
         // POST: api/APIFACTURAs
         [ResponseType(typeof(FACTURA))]
         public IHttpActionResult PostFACTURA(FACTURA fACTURA)

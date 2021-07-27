@@ -1390,3 +1390,6 @@ C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\
 C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.ventaCampos.resources
 C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.nuevoCampoPago.resources
 C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.addedCamposTFB.resources
+C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.cambioFact.resources
+C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.nuevCampoDetc.resources
+C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.ncProduct.resources
