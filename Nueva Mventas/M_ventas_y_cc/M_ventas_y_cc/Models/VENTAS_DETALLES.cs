@@ -13,8 +13,8 @@ namespace M_ventas_y_cc.Models
         public int cantidad { get; set; }
         public float precio_unitario { get; set; }
         public float subtotal { get; set; }
-
-
+     
+        public int numVentDet { get; set; }
 
 
 

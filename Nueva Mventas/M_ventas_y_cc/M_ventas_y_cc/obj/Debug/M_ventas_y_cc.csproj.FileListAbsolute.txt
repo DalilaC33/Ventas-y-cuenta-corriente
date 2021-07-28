@@ -1394,3 +1394,4 @@ C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\
 C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.nuevCampoDetc.resources
 C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.ncProduct.resources
 C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.campoVentaaFct.resources
+C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.ventaDetalleCampo.resources

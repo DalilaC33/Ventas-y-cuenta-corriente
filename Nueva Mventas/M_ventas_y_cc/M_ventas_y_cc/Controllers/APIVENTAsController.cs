@@ -46,15 +46,33 @@ namespace M_ventas_y_cc.Controllers
         public IHttpActionResult GetVENTA(int id)
         {
             VENTA vENTA = db.VENTA.Find(id);
+         
+             // VENTAS_DETALLES vENTAD = db.VENTAS_DETALLES.Find(vENTA.VENTAId);
+
+
             if (vENTA == null)
             {
                 return NotFound();
             }
 
             var venta = db.VENTA.Include(p => p.ENCARGADOId).Include(p => p.CLIENTEId);
-
+            var detalles = db.VENTAS_DETALLES.Include(p => p.VENTAId);
+            IList<PRODUCTO> det = new List<PRODUCTO>();
             IList<VENTAVM> result = new List<VENTAVM>();
 
+            foreach (VENTAS_DETALLES ven in detalles)
+            {
+                if (ven.VENTAId.VENTAId == vENTA.VENTAId)
+                {
+                    det.Add(new PRODUCTO()
+                    {
+
+                        nombre = ven.PRODUCTOId.nombre,
+                        precio = ven.PRODUCTOId.precio
+                    });
+
+                }
+            }   
 
             result.Add(new VENTAVM()
             {
@@ -68,8 +86,12 @@ namespace M_ventas_y_cc.Controllers
                 total= vENTA.total,
                 ruc = vENTA.CLIENTEId.ruc,
                 fecha = vENTA.fecha,
-                estado = vENTA.estado
+                estado = vENTA.estado,
+                detalles = det
+                
             });
+
+           
 
 
             return Ok(result);

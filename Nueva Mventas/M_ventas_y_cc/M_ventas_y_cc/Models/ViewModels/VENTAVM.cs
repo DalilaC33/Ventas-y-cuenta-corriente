@@ -25,6 +25,7 @@ namespace M_ventas_y_cc.Models.ViewModels
 
         public int facturado { get; set; }
 
+        public IList<PRODUCTO> detalles { get; set; }
         public virtual CLIENTE CLIENTEId { get; set; }
 
         public DateTime fecha { get; set; }
