@@ -57,22 +57,28 @@ namespace M_ventas_y_cc.Controllers
 
             var venta = db.VENTA.Include(p => p.ENCARGADOId).Include(p => p.CLIENTEId);
             var detalles = db.VENTAS_DETALLES.Include(p => p.VENTAId);
-            IList<PRODUCTO> det = new List<PRODUCTO>();
+            IList<PRODUCTOSVM> det = new List<PRODUCTOSVM>();
             IList<VENTAVM> result = new List<VENTAVM>();
-
+           int total = 0;
+            int cant = 0;
             foreach (VENTAS_DETALLES ven in detalles)
             {
                 if (ven.VENTAId.VENTAId == vENTA.VENTAId)
                 {
-                    det.Add(new PRODUCTO()
+                    det.Add(new PRODUCTOSVM()
                     {
 
                         nombre = ven.PRODUCTOId.nombre,
-                        precio = ven.PRODUCTOId.precio
-                    });
+                        precio = ven.PRODUCTOId.precio,
+                        cantidad= ven.cantidad,
+                        total=ven.subtotal
 
+                    });
                 }
-            }   
+                    
+                   
+                }
+              
 
             result.Add(new VENTAVM()
             {

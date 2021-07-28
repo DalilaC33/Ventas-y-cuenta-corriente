@@ -35,6 +35,8 @@ namespace M_ventas_y_cc.Controllers
             return Ok(pAGOS);
         }
 
+
+       
         // PUT: api/APIPAGOS/5
         [ResponseType(typeof(void))]
         public IHttpActionResult PutPAGOS(int id, PAGOS pAGOS)
