@@ -32,6 +32,8 @@ namespace M_ventas_y_cc.Controllers
                 return NotFound();
             }
 
+
+
             return Ok(dETALLES_DE_PAGO);
         }
 

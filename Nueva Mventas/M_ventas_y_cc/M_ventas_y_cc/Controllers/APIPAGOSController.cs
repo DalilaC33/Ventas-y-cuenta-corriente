@@ -20,6 +20,27 @@ namespace M_ventas_y_cc.Controllers
         // GET: api/APIPAGOS
         public IQueryable<PAGOS> GetPAGOS()
         {
+            var pagos = db.PAGOS.Include(p => p.CLIENTEId).Include(p => p.FACTURAId).Include(p => p.VENTAId);
+            IList<PAGOSVM> result = new List<PAGOSVM>();
+
+            foreach (PAGOS pAGOS in pagos)
+            {
+                result.Add(new PAGOSVM()
+                {
+                  //  estado = pAGOS.VENTAId.estado,
+                    nroFactura = pAGOS.FACTURAId.factNum,
+                    condicion = pAGOS.FACTURAId.condicion,
+
+
+                    cliente = pAGOS.CLIENTEId.nombre,
+                    ruc = pAGOS.CLIENTEId.ruc,
+                    fecha = pAGOS.fecha,
+                    monto = pAGOS.total,
+                    encargado = pAGOS.VENTAId.ENCARGADOId.nombre,
+
+
+                });
+            }
             return db.PAGOS;
         }
 
@@ -35,33 +56,34 @@ namespace M_ventas_y_cc.Controllers
             }
 
 
-         
 
-            
-            IList<PAGOSVM> result = new List<PAGOSVM>();
+            var detalles = db.DETALLES_DE_PAGO;
 
-           
+            IList<DETALLES_DE_PAGOVM> result = new List<DETALLES_DE_PAGOVM>();
 
-            result.Add(new PAGOSVM()
+            foreach (DETALLES_DE_PAGO det in detalles)
             {
-                estado = pAGOS.VENTAId.estado,
-                nroFactura = pAGOS.FACTURAId.factNum,
-                condicion = pAGOS.FACTURAId.condicion,
 
 
-                cliente = pAGOS.CLIENTEId.nombre,
-                ruc = pAGOS.CLIENTEId.ruc,
-                fecha = pAGOS.fecha,
-                monto = pAGOS.total,
-                encargado = pAGOS.VENTAId.ENCARGADOId.nombre,
+                if (det.PAGOSId.PAGOSId == pAGOS.PAGOSId)
+                {
 
 
-            });
 
+                    result.Add(new DETALLES_DE_PAGOVM()
+                    {
+                        idpagos = det.PAGOSId.PAGOSId,
+                        numCuota = det.numero,
+                        fechaVenc = det.PAGOSId.fechaVenc,
+                        estado = det.PAGOSId.estado
 
+                    });
+                }
+
+                
+            }
             return Ok(result);
         }
-
 
         // return Ok(pAGOS);
 

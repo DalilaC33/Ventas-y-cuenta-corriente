@@ -22,7 +22,9 @@ namespace M_ventas_y_cc.Models
 
         public DateTime fecha { get; set; }
 
+        public DateTime fechaVenc { get; set; }
 
+        public String estado { get; set; }
 
 
     }

@@ -1397,3 +1397,5 @@ C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\
 C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.ventaDetalleCampo.resources
 C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.addFactPagos.resources
 C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.cambioDetFact.resources
+C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.addCampoVencimientoPago.resources
+C:\Users\Usuario\Pictures\Ventas-y-cuenta-corriente\Nueva Mventas\M_ventas_y_cc\M_ventas_y_cc\obj\Debug\M_ventas_y_cc.Migrations.addestadopago.resources
