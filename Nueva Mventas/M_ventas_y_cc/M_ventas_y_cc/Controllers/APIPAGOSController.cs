@@ -9,6 +9,7 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
 using M_ventas_y_cc.Models;
+using M_ventas_y_cc.Models.ViewModels;
 
 namespace M_ventas_y_cc.Controllers
 {
@@ -27,16 +28,46 @@ namespace M_ventas_y_cc.Controllers
         public IHttpActionResult GetPAGOS(int id)
         {
             PAGOS pAGOS = db.PAGOS.Find(id);
+            // FACTURA factura = db.FACTURA.Find(pAGOS.VENTAId.VENTAId);
             if (pAGOS == null)
             {
                 return NotFound();
             }
 
-            return Ok(pAGOS);
+
+         
+
+            
+            IList<PAGOSVM> result = new List<PAGOSVM>();
+
+           
+
+            result.Add(new PAGOSVM()
+            {
+                estado = pAGOS.VENTAId.estado,
+                nroFactura = pAGOS.FACTURAId.factNum,
+                condicion = pAGOS.FACTURAId.condicion,
+
+
+                cliente = pAGOS.CLIENTEId.nombre,
+                ruc = pAGOS.CLIENTEId.ruc,
+                fecha = pAGOS.fecha,
+                monto = pAGOS.total,
+                encargado = pAGOS.VENTAId.ENCARGADOId.nombre,
+
+
+            });
+
+
+            return Ok(result);
         }
 
 
-       
+        // return Ok(pAGOS);
+
+
+
+
         // PUT: api/APIPAGOS/5
         [ResponseType(typeof(void))]
         public IHttpActionResult PutPAGOS(int id, PAGOS pAGOS)

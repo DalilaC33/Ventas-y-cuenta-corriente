@@ -13,6 +13,8 @@ namespace M_ventas_y_cc.Models
 
         public int numPago { get; set; }
 
+        public virtual FACTURA FACTURAId {get;set;}
+
 
         //  public virtual DETALLES_DE_PAGO DETALLES_DE_PAGO { get; set; }
 

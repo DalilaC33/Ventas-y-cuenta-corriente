@@ -59,8 +59,7 @@ namespace M_ventas_y_cc.Controllers
             var detalles = db.VENTAS_DETALLES.Include(p => p.VENTAId);
             IList<PRODUCTOSVM> det = new List<PRODUCTOSVM>();
             IList<VENTAVM> result = new List<VENTAVM>();
-           int total = 0;
-            int cant = 0;
+         
             foreach (VENTAS_DETALLES ven in detalles)
             {
                 if (ven.VENTAId.VENTAId == vENTA.VENTAId)

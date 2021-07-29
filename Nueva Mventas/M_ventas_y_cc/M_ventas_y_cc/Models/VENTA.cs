@@ -13,7 +13,7 @@ namespace M_ventas_y_cc.Models
 
         public int VENTAId { get; set; }
 
-        public virtual ENCARGADO ENCARGADOId { get; set; }
+        public virtual ENCARGADO ENCARGADOId { get; set; } 
 
         
 
