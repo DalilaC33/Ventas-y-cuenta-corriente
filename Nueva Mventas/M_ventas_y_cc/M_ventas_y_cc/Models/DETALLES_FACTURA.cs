@@ -12,7 +12,7 @@ namespace M_ventas_y_cc.Models
         public virtual FACTURA FACTURAId { get; set; } 
         public virtual ENCARGADO ENCARGADOId { get; set; }
 
-        public virtual DETALLE_CREDITO DETALLE_CREDITOId { get; set; }
+      //  public virtual DETALLE_CREDITO DETALLE_CREDITOId { get; set; }
 
         public DateTime fecha { get; set; }
 

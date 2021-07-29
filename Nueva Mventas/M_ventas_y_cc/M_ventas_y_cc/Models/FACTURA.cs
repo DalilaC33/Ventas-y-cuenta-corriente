@@ -22,7 +22,7 @@ namespace M_ventas_y_cc.Models
         public float iva { get; set; }
         public String saldo { get; set; }
 
-        public int factNum { get; set; }
+        public String factNum { get; set; }
 
 
 

@@ -9,7 +9,7 @@ namespace M_ventas_y_cc.Models.ViewModels
     {
         public String estado { get; set; }
 
-        public int nroFactura { get; set; }
+        public String nroFactura { get; set; }
 
         public DateTime fecha { get; set; }
 

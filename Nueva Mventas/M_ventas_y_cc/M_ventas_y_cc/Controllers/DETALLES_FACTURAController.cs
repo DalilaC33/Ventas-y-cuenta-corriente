@@ -46,7 +46,7 @@ namespace M_ventas_y_cc.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "DETALLES_FACTURAId,fecha,iva,total,estado")] DETALLES_FACTURA dETALLES_FACTURA)
+        public ActionResult Create([Bind(Include = "DETALLES_FACTURAId,fecha,iva,total")] DETALLES_FACTURA dETALLES_FACTURA)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace M_ventas_y_cc.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "DETALLES_FACTURAId,fecha,iva,total,estado")] DETALLES_FACTURA dETALLES_FACTURA)
+        public ActionResult Edit([Bind(Include = "DETALLES_FACTURAId,fecha,iva,total")] DETALLES_FACTURA dETALLES_FACTURA)
         {
             if (ModelState.IsValid)
             {

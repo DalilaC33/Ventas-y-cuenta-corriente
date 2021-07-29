@@ -101,8 +101,22 @@ namespace M_ventas_y_cc.Controllers
 
             return Ok(result);
         }
-        
 
+        [ResponseType(typeof(void))]
+        public IHttpActionResult PutVENTAState(int id,String estado)
+        {
+            VENTA vENTA = db.VENTA.Find(id);
+            if (vENTA == null)
+            {
+                return NotFound();
+            }
+
+            vENTA.estado = estado;
+            db.SaveChanges();
+
+            return StatusCode(HttpStatusCode.NoContent);
+        }
+          
         // PUT: api/APIVENTAs/5
         [ResponseType(typeof(void))]
         public IHttpActionResult PutVENTA(int id, VENTA vENTA)

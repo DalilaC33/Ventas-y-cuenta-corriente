@@ -313,7 +313,6 @@
     <Compile Include="Controllers\APIDETALLES_DE_PAGOController.cs" />
     <Compile Include="Controllers\APIDETALLES_FACTURAController.cs" />
     <Compile Include="Controllers\APIDETALLES_FACT_PAGOController.cs" />
-    <Compile Include="Controllers\APIDETALLE_CREDITOController.cs" />
     <Compile Include="Controllers\APIENCARGADOController.cs" />
     <Compile Include="Controllers\APIFACTURAsController.cs" />
     <Compile Include="Controllers\APINOTAS_DE_CREDITOController.cs" />
@@ -528,6 +527,10 @@
     <Compile Include="Migrations\202107290044354_addFactPagos.cs" />
     <Compile Include="Migrations\202107290044354_addFactPagos.Designer.cs">
       <DependentUpon>202107290044354_addFactPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107291444280_cambioDetFact.cs" />
+    <Compile Include="Migrations\202107291444280_cambioDetFact.Designer.cs">
+      <DependentUpon>202107291444280_cambioDetFact.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -867,6 +870,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202107290044354_addFactPagos.resx">
       <DependentUpon>202107290044354_addFactPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107291444280_cambioDetFact.resx">
+      <DependentUpon>202107291444280_cambioDetFact.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
