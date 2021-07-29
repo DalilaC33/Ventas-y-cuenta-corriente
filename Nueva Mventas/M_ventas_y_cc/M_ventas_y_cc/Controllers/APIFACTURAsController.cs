@@ -9,6 +9,7 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
 using M_ventas_y_cc.Models;
+using M_ventas_y_cc.Models.ViewModels;
 
 namespace M_ventas_y_cc.Controllers
 {
@@ -32,7 +33,22 @@ namespace M_ventas_y_cc.Controllers
                 return NotFound();
             }
 
-            return Ok(fACTURA);
+            IList<FACTURAVM> result = new List<FACTURAVM>();
+
+            result.Add(new FACTURAVM()
+            {
+                FACTURAId = fACTURA.FACTURAId,
+                numFact=fACTURA.factNum,
+                nombreCliente=fACTURA.CLIENTEId.nombre,
+                ruc=fACTURA.CLIENTEId.ruc,
+                estado=fACTURA.estado,
+                condicion=fACTURA.condicion,
+                nombreEncargado=fACTURA.ENCARGADOId.nombre
+
+            });
+
+
+            return Ok(result);
         }
 
         // PUT: api/APIFACTURAs/5

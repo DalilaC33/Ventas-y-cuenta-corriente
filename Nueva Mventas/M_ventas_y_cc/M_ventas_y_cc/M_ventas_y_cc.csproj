@@ -560,6 +560,7 @@
     <Compile Include="Models\VENTA.cs" />
     <Compile Include="Models\VENTAS_DETALLES.cs" />
     <Compile Include="Models\ViewModels\ENCARGADOVM.cs" />
+    <Compile Include="Models\ViewModels\FACTURAVM.cs" />
     <Compile Include="Models\ViewModels\PAGOSVM.cs" />
     <Compile Include="Models\ViewModels\PRODUCTOSVM.cs" />
     <Compile Include="Models\ViewModels\VENTAVM.cs" />
