@@ -136,6 +136,7 @@ namespace M_ventas_y_cc.Controllers
 
             try
             {
+                vENTA.fecha = DateTime.Today;
                 db.SaveChanges();
             }
             catch (DbUpdateConcurrencyException)
