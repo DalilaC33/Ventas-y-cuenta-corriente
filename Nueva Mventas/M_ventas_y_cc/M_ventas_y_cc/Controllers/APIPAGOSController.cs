@@ -138,7 +138,7 @@ namespace M_ventas_y_cc.Controllers
             pAGOS.fecha = DateTime.Today;
             pAGOS.CLIENTEId = db.CLIENTE.Find(pAGOS.CLIENTEId.credito);
             pAGOS.VENTAId = db.VENTA.Find(pAGOS.VENTAId.numVenta);
-
+            pAGOS.FACTURAId = db.FACTURA.Find(pAGOS.FACTURAId.FACTURAId);
             db.PAGOS.Add(pAGOS);
             db.SaveChanges();
 
