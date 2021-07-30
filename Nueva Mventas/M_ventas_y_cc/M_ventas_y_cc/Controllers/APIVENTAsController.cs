@@ -28,8 +28,8 @@ namespace M_ventas_y_cc.Controllers
                 result.Add(new VENTAVM()
                 {
                     VENTAId = ven.VENTAId,
-                    ENCARGADOId = ven.ENCARGADOId.ENCARGADOId,
-                    CLIENTEId = ven.CLIENTEId.CLIENTEId,
+                    ENCARGADOId = ven.ENCARGADOId,
+                    CLIENTEId = ven.CLIENTEId,
                     fecha = ven.fecha,
                     estado = ven.estado
             });
@@ -86,8 +86,8 @@ namespace M_ventas_y_cc.Controllers
                 VENTAId = vENTA.VENTAId,
                 nombreEncargado = vENTA.ENCARGADOId.nombre,
                 nombreCliente = vENTA.CLIENTEId.nombre,
-               ENCARGADOId=vENTA.ENCARGADOId.ENCARGADOId,
-               CLIENTEId=vENTA.CLIENTEId.CLIENTEId,
+               ENCARGADOId=vENTA.ENCARGADOId,
+               CLIENTEId=vENTA.CLIENTEId,
                 iva = vENTA.iva,
                 total= vENTA.total,
                 ruc = vENTA.CLIENTEId.ruc,
