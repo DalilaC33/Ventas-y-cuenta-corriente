@@ -85,6 +85,7 @@ namespace M_ventas_y_cc.Controllers
             dETALLES_DE_PAGO.TARJETAId = db.TARJETA.Find(dETALLES_DE_PAGO.TARJETAId.numTarjeta);
             dETALLES_DE_PAGO.FORMAS_DE_PAGOId = db.FORMAS_DE_PAGO.Find(dETALLES_DE_PAGO.FORMAS_DE_PAGOId.numFDP);
             dETALLES_DE_PAGO.PAGOSId = db.PAGOS.Find(dETALLES_DE_PAGO.PAGOSId.numPago);
+            dETALLES_DE_PAGO.BANCOId = db.BANCO.Find(dETALLES_DE_PAGO.BANCOId.BANCOId);
 
             db.DETALLES_DE_PAGO.Add(dETALLES_DE_PAGO);
             db.SaveChanges();
