@@ -12,7 +12,7 @@ namespace M_ventas_y_cc.Models.ViewModels
 
         public int VENTAId { get; set; }
 
-        public virtual ENCARGADO ENCARGADOId { get; set; }
+        public int ENCARGADOId { get; set; }
 
         public String ruc { get; set; }
 
@@ -27,7 +27,7 @@ namespace M_ventas_y_cc.Models.ViewModels
         public int facturado { get; set; }
 
         public IList<PRODUCTOSVM> detalles { get; set; }
-        public virtual CLIENTE CLIENTEId { get; set; }
+        public int CLIENTEId { get; set; }
 
         public DateTime fecha { get; set; }
 

@@ -86,7 +86,8 @@ namespace M_ventas_y_cc.Controllers
                 VENTAId = vENTA.VENTAId,
                 nombreEncargado = vENTA.ENCARGADOId.nombre,
                 nombreCliente = vENTA.CLIENTEId.nombre,
-               
+               ENCARGADOId=vENTA.ENCARGADOId.ENCARGADOId,
+               CLIENTEId=vENTA.CLIENTEId.CLIENTEId,
                 iva = vENTA.iva,
                 total= vENTA.total,
                 ruc = vENTA.CLIENTEId.ruc,
