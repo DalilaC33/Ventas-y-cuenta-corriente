@@ -28,8 +28,8 @@ namespace M_ventas_y_cc.Controllers
                 result.Add(new VENTAVM()
                 {
                     VENTAId = ven.VENTAId,
-                    ENCARGADOId = ven.ENCARGADOId,
-                    CLIENTEId = ven.CLIENTEId,
+                    ENCARGADOId = ven.ENCARGADOId.ENCARGADOId,
+                    CLIENTEId = ven.CLIENTEId.CLIENTEId,
                     fecha = ven.fecha,
                     estado = ven.estado
             });
