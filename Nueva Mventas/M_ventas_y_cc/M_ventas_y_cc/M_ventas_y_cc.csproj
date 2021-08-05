@@ -313,6 +313,7 @@
     <Compile Include="Controllers\APIDETALLES_DE_PAGOController.cs" />
     <Compile Include="Controllers\APIDETALLES_FACTURAController.cs" />
     <Compile Include="Controllers\APIDETALLES_FACT_PAGOController.cs" />
+    <Compile Include="Controllers\APIDETALLES_NOTAS_DE_CREDITOController.cs" />
     <Compile Include="Controllers\APIENCARGADOController.cs" />
     <Compile Include="Controllers\APIFACTURAsController.cs" />
     <Compile Include="Controllers\APINOTAS_DE_CREDITOController.cs" />
@@ -331,6 +332,7 @@
     <Compile Include="Controllers\DETALLES_DE_PAGOController.cs" />
     <Compile Include="Controllers\DETALLES_FACTURAController.cs" />
     <Compile Include="Controllers\DETALLES_FACT_PAGOController.cs" />
+    <Compile Include="Controllers\DETALLES_NOTAS_DE_CREDITOController.cs" />
     <Compile Include="Controllers\DETALLE_CREDITOController.cs" />
     <Compile Include="Controllers\EmpleadosLoginController.cs" />
     <Compile Include="Controllers\ENCARGADOesController.cs" />
@@ -540,6 +542,14 @@
     <Compile Include="Migrations\202107291618071_addestadopago.Designer.cs">
       <DependentUpon>202107291618071_addestadopago.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202108051912395_addNotasCredito.cs" />
+    <Compile Include="Migrations\202108051912395_addNotasCredito.Designer.cs">
+      <DependentUpon>202108051912395_addNotasCredito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108051942066_aggDNC.cs" />
+    <Compile Include="Migrations\202108051942066_aggDNC.Designer.cs">
+      <DependentUpon>202108051942066_aggDNC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -552,6 +562,7 @@
     <Compile Include="Models\DETALLES_DE PAGO.cs" />
     <Compile Include="Models\DETALLES_FACTURA.cs" />
     <Compile Include="Models\DETALLES_FACT_PAGO.cs" />
+    <Compile Include="Models\DETALLES_NOTAS_DE_CREDITO.cs" />
     <Compile Include="Models\DETALLE_CREDITO.cs" />
     <Compile Include="Models\ENCARGADO.cs" />
     <Compile Include="Models\FACTURA.cs" />
@@ -727,6 +738,11 @@
     <Content Include="Views\FACTURAs\Details.cshtml" />
     <Content Include="Views\FACTURAs\Edit.cshtml" />
     <Content Include="Views\FACTURAs\Index.cshtml" />
+    <Content Include="Views\DETALLES_NOTAS_DE_CREDITO\Create.cshtml" />
+    <Content Include="Views\DETALLES_NOTAS_DE_CREDITO\Delete.cshtml" />
+    <Content Include="Views\DETALLES_NOTAS_DE_CREDITO\Details.cshtml" />
+    <Content Include="Views\DETALLES_NOTAS_DE_CREDITO\Edit.cshtml" />
+    <Content Include="Views\DETALLES_NOTAS_DE_CREDITO\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -889,6 +905,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202107291618071_addestadopago.resx">
       <DependentUpon>202107291618071_addestadopago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108051912395_addNotasCredito.resx">
+      <DependentUpon>202108051912395_addNotasCredito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108051942066_aggDNC.resx">
+      <DependentUpon>202108051942066_aggDNC.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

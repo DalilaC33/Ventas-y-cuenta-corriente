@@ -48,11 +48,12 @@ namespace M_ventas_y_cc.Models
 
         public DbSet<DETALLES_FACT_PAGO> DETALLES_FACT_PAGO { get; set; }
         public DbSet<NOTAS_DE_CREDITO> NOTAS_DE_CREDITO { get; set; }
+        
         public DbSet<CUENTAS> CUENTAS { get; set; }
         public DbSet<ASIENTO> ASIENTO { get; set; }
         public DbSet<ASIENTOS_DETALLES> ASIENTOS_DETALLES { get; set; }
 
-
+        public DbSet<DETALLES_NOTAS_DE_CREDITO> DETALLES_NOTAS_DE_CREDITO { get; set; }
     }
 
 }
