@@ -79,6 +79,11 @@ namespace M_ventas_y_cc.Controllers
                 return BadRequest(ModelState);
             }
 
+
+            nOTAS_DE_CREDITO.FACTURAId = db.FACTURA.Find(nOTAS_DE_CREDITO.FACTURAId.FACTURAId);
+            nOTAS_DE_CREDITO.ENCARGADOId = db.ENCARGADOS.Find(nOTAS_DE_CREDITO.ENCARGADOId.encargadoNum);
+            nOTAS_DE_CREDITO.fecha_emision = DateTime.Today;
+
             db.NOTAS_DE_CREDITO.Add(nOTAS_DE_CREDITO);
             db.SaveChanges();
 

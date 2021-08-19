@@ -81,6 +81,7 @@ namespace M_ventas_y_cc.Controllers
 
             dETALLES_FACTURA.fecha = DateTime.Today;
             dETALLES_FACTURA.FACTURAId = db.FACTURA.Find(dETALLES_FACTURA.FACTURAId.factNum);
+            dETALLES_FACTURA.ENCARGADOId = db.ENCARGADOS.Find(dETALLES_FACTURA.ENCARGADOId.encargadoNum); 
             //   dETALLES_FACTURA.DETALLE_CREDITOId = db.DETALLE_CREDITOS.Find(dETALLES_FACTURA.DETALLE_CREDITOId.numDetCredito);
 
 
